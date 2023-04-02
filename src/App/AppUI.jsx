@@ -21,6 +21,7 @@ function AppUI() {
 
   return (
     <React.Fragment>
+      <h1>Taskr</h1>
       <TodoCounter />
       <TodoSearch />
 

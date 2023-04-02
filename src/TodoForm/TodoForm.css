@@ -1,7 +1,8 @@
 form {
-  width: 90%;
-  max-width: 300px;
-  background-color: #fff;
+  width: 75%;
+  max-width: 400px;
+  border-radius: 20px;
+  background-color: #171719b7;
   padding: 33px 40px;
   display: flex;
   justify-content: center;
@@ -13,19 +14,18 @@ label {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  color: #1e1e1f;
+  color: #e9edf1;
   margin-bottom: 26px;
 }
 
 textarea {
-  background-color: #f9fbfc;
-  border: 2px solid #202329;
+  background-color: #232228;
+  border: none;
   border-radius: 8px;
   box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
-  color: #1e1e1f;
-  font-size: 20px;
-  text-align: center;
-  padding: 12px;
+  color: #e9edf1;
+  font-size: 18px;
+  padding: 15px;
   height: 96px;
   width: calc(100% - 25px);
 
@@ -33,13 +33,13 @@ textarea {
 }
 
 textarea::placeholder {
-  color: #a5a5a5;
+  color: #6d6b72;
   font-family: "Montserrat";
   font-weight: 400;
 }
 
 textarea:focus {
-  outline-color: #61dafa;
+  outline-color: #6fe4b1;
 }
 
 .TodoForm-buttonContainer {
@@ -47,14 +47,14 @@ textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
 }
 
 .TodoForm-button {
   cursor: pointer;
   display: inline-block;
-  font-size: 20px;
-  color: #202329;
+  font-size: 18px;
+  color: #e9edf1;
   font-weight: 400;
   width: 120px;
   height: 48px;
@@ -64,8 +64,9 @@ textarea:focus {
 }
 
 .TodoForm-button__add {
-  background: #61dafa;
-  box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+  background: #6fe4b1;
+  box-shadow: 0px 5px 25px #6fe4b124;
+  color: #232228;
 }
 
 .TodoForm-button__cancel {

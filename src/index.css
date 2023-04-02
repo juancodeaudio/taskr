@@ -1,8 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  position: fixed;
+  left: 0;
+  right: 0;
   margin: 0;
   padding: 0;
-  background: #f2f4f5;
-  color: #1e1e1f;
+  background: #171719;
+  color: #e9edf1;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
@@ -10,4 +17,17 @@ body {
   margin: 0 24px;
   position: relative;
   min-height: 100vh;
+}
+
+h1 {
+  width: 100%;
+  font-size: 60px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-image: linear-gradient(to right bottom, #62f4f9, #6fe4b1, #fe7347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }

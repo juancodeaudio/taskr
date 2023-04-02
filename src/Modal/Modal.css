@@ -1,5 +1,5 @@
 .ModalBackground {
-  background: rgba(188, 188, 188, 0.3);
+  background: transparent;
   position: fixed;
   top: 0.1px;
   left: -10px;
@@ -9,5 +9,5 @@
   justify-content: center;
   align-items: center;
   color: white;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(12px);
 }
