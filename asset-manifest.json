@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/taskr/static/css/main.7bc2950c.css",
+    "main.js": "/taskr/static/js/main.6f216823.js",
+    "static/media/empty-todo-list.png": "/taskr/static/media/empty-todo-list.bccd9cf4ce7f757a56ee.png",
+    "index.html": "/taskr/index.html",
+    "static/media/trash.svg": "/taskr/static/media/trash.09011edf4ff560853b1f5e171f11405a.svg",
+    "static/media/check.svg": "/taskr/static/media/check.be401899201037ab43bd35642a4f0860.svg",
+    "main.7bc2950c.css.map": "/taskr/static/css/main.7bc2950c.css.map",
+    "main.6f216823.js.map": "/taskr/static/js/main.6f216823.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bc2950c.css",
+    "static/js/main.6f216823.js"
+  ]
+}
