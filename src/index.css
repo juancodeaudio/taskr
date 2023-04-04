@@ -26,6 +26,7 @@ h1 {
   margin-bottom: 10px;
   text-align: center;
   background-image: linear-gradient(to right bottom, #62f4f9, #6fe4b1, #fe7347);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
