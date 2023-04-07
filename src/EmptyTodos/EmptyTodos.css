@@ -20,5 +20,5 @@ h3 {
 }
 
 p {
-  color: #6d6b72;
+  color: var(--font-dark);
 }

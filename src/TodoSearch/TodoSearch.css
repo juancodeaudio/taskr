@@ -1,7 +1,7 @@
 .TodoSearch {
   background: transparent;
   border-radius: 12px;
-  border: 1px solid #6d6b72;
+  border: 1px solid var(--font-dark);
   margin-inline: 15%;
   height: 44px;
   width: 70%;
@@ -9,29 +9,27 @@
   padding-inline: 15px;
   font-family: "Montserrat";
   font-weight: 400;
-  color: #e9edf1;
-  box-shadow: 0px 5px 12px rgba(32, 35, 41, 0.15);
+  color: var(--light);
   transition: 0.3s;
 }
 
 .TodoSearch::placeholder {
-  color: #6d6b72;
+  color: var(--font-dark);
   font-family: "Montserrat";
   font-weight: 400;
 }
 
 .TodoSearch:hover {
-  background: #232228;
-  border-color: #232228;
+  background: var(--primary-light);
+  border-color: var(--primary-light);
   outline: none;
   margin-inline: 10%;
   width: 80%;
 }
 
 .TodoSearch:focus {
-  background: #232228;
-  border-color: #232228;
-  outline-color: #62f4f9;
+  background: var(--primary-light);
+  border-color: var(--primary-light);
   outline: none;
   margin-inline: 10%;
   width: 80%;

@@ -10,7 +10,7 @@
 .Icon-container__check {
   position: absolute;
   left: 12px;
-  background-color: #272c34;
+  background-color: var(--secondary-dark);
   border-width: 2px;
   border-style: solid;
   border-radius: 50%;
@@ -21,7 +21,7 @@
 .Icon-container__trash {
   position: absolute;
   right: 12px;
-  background-color: #3a262f;
+  background-color: var(--error-dark);
   border-radius: 15px;
   transform: rotate(0);
   transition: 0.3s;
@@ -40,11 +40,11 @@
 }
 
 .Icon-svg__trash {
-  stroke: #cd4060;
+  stroke: var(--error);
 }
 
 .Icon-container:hover .Icon-svg__check {
-  stroke: #6fe4b1;
+  stroke: var(--secondary);
 }
 
 .Icon-container__check:hover {
@@ -52,13 +52,14 @@
 }
 
 .Icon-container:hover .Icon-svg__trash {
-  stroke: #3a262f;
+  stroke: rgba(var(--error), 0.5);
+  stroke: var(--error-dark);
 
   transform: rotate(360deg);
 }
 
 .Icon-container__trash:hover {
-  background-color: #cd4060;
+  background-color: var(--error);
 }
 
 /* .Icon-check--active {

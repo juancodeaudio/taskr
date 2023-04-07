@@ -8,6 +8,7 @@ function CompleteIcon({ completed, onComplete }) {
       color={completed ? "#6d6b72" : "#272c34"}
       onClick={onComplete}
       border={completed ? "#6d6b72" : "#6fe4b1"}
+      completed={completed}
     />
   );
 }

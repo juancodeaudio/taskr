@@ -8,15 +8,17 @@ body {
   right: 0;
   margin: 0;
   padding: 0;
-  background: #171719;
-  color: #e9edf1;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background: var(--primary);
+  color: var(--light);
+  font-family: var(--main-font);
 }
 
 #root {
   margin: 0 24px;
   position: relative;
+  height: 100vh;
   min-height: 100vh;
+  display: flex;
 }
 
 h1 {
@@ -25,10 +27,21 @@ h1 {
   margin-top: 50px;
   margin-bottom: 10px;
   text-align: center;
-  background-image: linear-gradient(to right bottom, #62f4f9, #6fe4b1, #fe7347);
+  background-image: linear-gradient(
+    to right bottom,
+    #62f4f9,
+    var(--secondary),
+    #fe7347
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}
+
+@media (min-width: 1150px) {
+  #root {
+    padding-inline: 7%;
+  }
 }

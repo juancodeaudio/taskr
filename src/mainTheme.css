@@ -1,0 +1,27 @@
+:root {
+  --primary: #171719;
+  --secondary: #6fe4b1;
+  --secondary-dark: #272c34;
+  --primary-light: #232228;
+  --primary-lighter: #36353d;
+  --form-background: #171719e6;
+  --font-dark: #6d6b72;
+  --light: #e9edf1;
+  --error: #cd4060;
+  --error-dark: #3a262f;
+  --main-font: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+/* :root {
+  --primary: #e7e7f0;
+  --secondary: #4ea37e;
+  --secondary-dark: #e2f1ea;
+  --primary-light: #d7d7e1;
+  --primary-lighter: #ccccda;
+  --form-background: #e7e7f0e6;
+  --font-dark: #8e8b94;
+  --light: #222224;
+  --error: #611d2d;
+  --error-dark: #e3b7cb;
+  --main-font: "Montserrat", Arial, Helvetica, sans-serif;
+} */
