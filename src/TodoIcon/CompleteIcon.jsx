@@ -5,7 +5,7 @@ function CompleteIcon({ completed, onComplete }) {
   return (
     <TodoIcon
       type="check"
-      color={completed ? "#6d6b72" : "#272c34"}
+      color={completed ? "#6d6b72" : "transparent"}
       onClick={onComplete}
       border={completed ? "#6d6b72" : "#6fe4b1"}
       completed={completed}

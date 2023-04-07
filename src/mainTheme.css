@@ -12,7 +12,7 @@
   --main-font: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
-/* :root {
+[data-theme="light"] {
   --primary: #e7e7f0;
   --secondary: #4ea37e;
   --secondary-dark: #e2f1ea;
@@ -20,8 +20,8 @@
   --primary-lighter: #ccccda;
   --form-background: #e7e7f0e6;
   --font-dark: #8e8b94;
-  --light: #222224;
+  --light: #171719;
   --error: #611d2d;
-  --error-dark: #e3b7cb;
+  --error-dark: #d8beca;
   --main-font: "Montserrat", Arial, Helvetica, sans-serif;
-} */
+}

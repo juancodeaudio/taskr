@@ -1,4 +1,5 @@
 import React from "react";
+import { ThemeColor } from "../ThemeColor";
 import { useTodos } from "./useTodos";
 import { TodoHeader } from "../TodoHeader";
 import { TodoCounter } from "../TodoCounter";
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <React.Fragment>
+      <ThemeColor />
       <section className="image-section">
         <p>Make</p>
         <p>THE BEST</p>
