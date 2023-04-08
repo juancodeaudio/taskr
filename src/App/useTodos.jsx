@@ -10,6 +10,7 @@ function useTodos() {
     error,
   } = useLocalStorage("TODOS_V1", []);
 
+  const [themeColor, setThemeColor] = React.useState(false);
   const [searchValue, setSearchValue] = React.useState("");
   const [openModal, setOpenModal] = React.useState(false);
 
@@ -28,10 +29,19 @@ function useTodos() {
     });
   }
 
+  const themeChange = () => {
+    if (themeColor) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+    setThemeColor(!themeColor);
+  };
+
   const completeTodo = (text) => {
     const todoIndex = todos.findIndex((todo) => todo.text === text);
     const newTodos = [...todos];
-    newTodos[todoIndex].completed = true;
+    newTodos[todoIndex].completed = !todos[todoIndex].completed;
     saveTodos(newTodos);
   };
 
@@ -59,6 +69,8 @@ function useTodos() {
     searchValue,
     setSearchValue,
     searchedTodos,
+    themeColor,
+    themeChange,
     addTodo,
     completeTodo,
     deleteTodo,

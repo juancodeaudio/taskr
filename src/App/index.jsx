@@ -23,6 +23,8 @@ function App() {
     completeTodo,
     deleteTodo,
     openModal,
+    themeColor,
+    themeChange,
     addTodo,
     setOpenModal,
     totalTodos,
@@ -34,7 +36,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <ThemeColor />
+      <ThemeColor themeChange={themeChange} />
       <section className="image-section">
         <p>Make</p>
         <p>THE BEST</p>
@@ -75,6 +77,7 @@ function App() {
               completed={todo.completed}
               onComplete={() => completeTodo(todo.text)}
               onDelete={() => deleteTodo(todo.text)}
+              themeColor={themeColor}
             />
           )}
         >

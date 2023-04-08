@@ -17,6 +17,16 @@
   transform: rotate(0);
   transition: 0.3s;
 }
+.Icon-container__uncheck {
+  position: absolute;
+  left: 12px;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  transform: rotate(0);
+  transition: 0.3s;
+}
 
 .Icon-container__trash {
   position: absolute;
@@ -49,6 +59,14 @@
 
 .Icon-container__check:hover {
   transform: rotate(360deg);
+}
+
+.Icon-container:hover .Icon-svg__uncheck {
+  stroke: var(--error);
+}
+
+.Icon-container__uncheck:hover {
+  transform: rotate(180deg);
 }
 
 .Icon-container:hover .Icon-svg__trash {

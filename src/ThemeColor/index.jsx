@@ -1,17 +1,7 @@
 import React from "react";
 import "./ThemeColor.css";
 
-function ThemeColor() {
-  const [themeColor, setThemeColor] = React.useState(false);
-  const themeChange = () => {
-    if (themeColor) {
-      document.documentElement.setAttribute("data-theme", "dark");
-    } else {
-      document.documentElement.setAttribute("data-theme", "light");
-    }
-    setThemeColor(!themeColor);
-  };
-
+function ThemeColor({ themeChange }) {
   return (
     <div className="theme-switch-wrapper">
       <em>☀</em>
@@ -19,7 +9,7 @@ function ThemeColor() {
         <input
           type="checkbox"
           id="checkbox"
-          theme={themeColor}
+          //   theme={themeColor}
           onChange={themeChange}
         />
         <div className="slider round"></div>
