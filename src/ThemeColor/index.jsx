@@ -1,7 +1,7 @@
 import React from "react";
 import "./ThemeColor.css";
 
-function ThemeColor({ themeChange }) {
+function ThemeColor({ changeTheme }) {
   return (
     <div className="theme-switch-wrapper">
       <em>☀</em>
@@ -10,7 +10,7 @@ function ThemeColor({ themeChange }) {
           type="checkbox"
           id="checkbox"
           //   theme={themeColor}
-          onChange={themeChange}
+          onChange={changeTheme}
         />
         <div className="slider round"></div>
       </label>

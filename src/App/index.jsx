@@ -16,27 +16,32 @@ import { ChangeAlert } from "../ChangeAlert";
 import "./App.css";
 
 function App() {
+  const { states, stateUpdaters } = useTodos();
+
   const {
-    error,
     loading,
-    searchedTodos,
-    completeTodo,
-    deleteTodo,
-    openModal,
-    themeColor,
-    themeChange,
-    addTodo,
-    setOpenModal,
+    error,
     totalTodos,
     completedTodos,
     searchValue,
+    themeColor,
+    searchedTodos,
+    openModal,
+  } = states;
+
+  const {
     setSearchValue,
+    changeTheme,
+    addTodo,
+    completeTodo,
+    deleteTodo,
+    setOpenModal,
     synchronizeTodos,
-  } = useTodos();
+  } = stateUpdaters;
 
   return (
     <React.Fragment>
-      <ThemeColor themeChange={themeChange} />
+      <ThemeColor changeTheme={changeTheme} />
       <section className="image-section">
         <p>Make</p>
         <p>THE BEST</p>

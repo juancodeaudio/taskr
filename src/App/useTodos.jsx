@@ -29,7 +29,7 @@ function useTodos() {
     });
   }
 
-  const themeChange = () => {
+  const changeTheme = () => {
     if (themeColor) {
       document.documentElement.setAttribute("data-theme", "dark");
     } else {
@@ -61,23 +61,28 @@ function useTodos() {
     saveTodos(newTodos);
   };
 
-  return {
+  const states = {
     loading,
     error,
     totalTodos,
     completedTodos,
     searchValue,
-    setSearchValue,
-    searchedTodos,
     themeColor,
-    themeChange,
+    searchedTodos,
+    openModal,
+  };
+
+  const stateUpdaters = {
+    setSearchValue,
+    changeTheme,
     addTodo,
     completeTodo,
     deleteTodo,
-    openModal,
     setOpenModal,
     synchronizeTodos,
   };
+
+  return { states, stateUpdaters };
 }
 
 export { useTodos };
