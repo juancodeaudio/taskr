@@ -1,9 +1,40 @@
+.Background {
+  background-image: url("../EmptyTodos/empty-todo-list.png");
+  background-size: 2300px;
+  background-repeat: no-repeat;
+  background-position: right -700px top;
+  opacity: 80%;
+  position: fixed;
+  top: 0.1px;
+  left: -10px;
+  right: 0.1px;
+  bottom: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* backdrop-filter: blur(80px); */
+}
+
+.ModalBackground {
+  background: transparent;
+  position: fixed;
+  top: 0.1px;
+  left: -10px;
+  right: 0.1px;
+  bottom: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(80px);
+}
+
 form {
   width: 90%;
-  max-width: 400px;
+  max-width: 500px;
   border-radius: 20px;
   background-color: var(--form-background);
-  padding: 33px 40px;
+  margin: 0 auto;
+  padding: 33px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,12 +53,12 @@ textarea {
   background-color: var(--primary-light);
   border: none;
   border-radius: 8px;
-  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+  /* box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25); */
   color: var(--light);
   font-size: 18px;
   padding: 15px;
-  height: 96px;
-  width: calc(100% - 25px);
+  height: 150px;
+  width: calc(100% - 15px);
 
   font-family: "Montserrat";
 }
@@ -48,6 +79,7 @@ textarea:focus {
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  max-width: 300px;
 }
 
 .TodoForm-button {

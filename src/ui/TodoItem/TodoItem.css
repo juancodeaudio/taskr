@@ -12,17 +12,17 @@
 }
 
 .TodoItem:hover {
-  cursor: pointer;
   background-color: var(--primary-lighter);
 }
 
 .TodoItem-p {
-  margin: 24px 0 24px 24px;
-  width: calc(100% - 120px);
+  margin: 24px 56px 24px 24px;
+  width: calc(100% - 180px);
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   color: var(--light);
+  overflow-wrap: break-word;
 }
 .TodoItem-p--complete {
   text-decoration: line-through;

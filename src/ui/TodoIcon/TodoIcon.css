@@ -28,6 +28,14 @@
   transition: 0.3s;
 }
 
+.Icon-container__edit {
+  position: absolute;
+  right: 64px;
+  border-radius: 15px;
+  transform: rotate(0);
+  transition: 0.3s;
+}
+
 .Icon-container__trash {
   position: absolute;
   right: 12px;
@@ -47,6 +55,10 @@
   width: 30px;
   height: 30px;
   /* stroke: #272c34; */
+}
+
+.Icon-svg__edit {
+  stroke: var(--tertiary);
 }
 
 .Icon-svg__trash {
@@ -69,8 +81,17 @@
   transform: rotate(180deg);
 }
 
+.Icon-container:hover .Icon-svg__edit {
+  stroke: var(--primary);
+
+  transform: rotate(360deg);
+}
+
+.Icon-container__edit:hover {
+  background-color: var(--tertiary);
+}
+
 .Icon-container:hover .Icon-svg__trash {
-  stroke: rgba(var(--error), 0.5);
   stroke: var(--error-dark);
 
   transform: rotate(360deg);

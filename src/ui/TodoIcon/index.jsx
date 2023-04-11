@@ -2,6 +2,7 @@ import React from "react";
 import { ReactComponent as CheckSVG } from "./check.svg";
 import { ReactComponent as UncheckSVG } from "./uncheck.svg";
 import { ReactComponent as TrashSVG } from "./trash.svg";
+import { ReactComponent as EditSVG } from "./edit.svg";
 import "./TodoIcon.css";
 
 const iconTypes = {
@@ -14,6 +15,9 @@ const iconTypes = {
     ) : (
       <CheckSVG className="Icon-svg Icon-svg__check" stroke={color} />
     ),
+  edit: (color) => (
+    <EditSVG className="Icon-svg Icon-svg__edit" stroke={color} />
+  ),
   trash: (color) => (
     <TrashSVG className="Icon-svg Icon-svg__trash" stroke={color} />
   ),

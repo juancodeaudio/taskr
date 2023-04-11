@@ -35,7 +35,7 @@
 @media (min-width: 500px) {
   .CreateTodoButton {
     position: relative;
-    bottom: 90px;
+    bottom: 120px;
     right: 0;
     margin: 0 auto;
   }

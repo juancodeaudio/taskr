@@ -1,21 +1,22 @@
 import React from "react";
-import { ThemeColor } from "../ThemeColor";
-import { useTodos } from "./useTodos";
-import { TodoHeader } from "../TodoHeader";
-import { TodoCounter } from "../TodoCounter";
-import { TodoSearch } from "../TodoSearch";
-import { TodoList } from "../TodoList";
-import { TodoItem } from "../TodoItem";
-import { TodoForm } from "../TodoForm";
-import { CreateTodoButton } from "../CreateTodoButton";
-import { TodosError } from "../TodosError";
-import { TodosLoading } from "../TodosLoading";
-import { EmptyTodos } from "../EmptyTodos";
-import { Modal } from "../Modal";
-import { ChangeAlert } from "../ChangeAlert";
-import "./App.css";
+import { useNavigate } from "react-router-dom";
+import { useTodos } from "../useTodos";
+import { ThemeColor } from "../../ui/ThemeColor";
+import { TodoHeader } from "../../ui/TodoHeader";
+import { TodoCounter } from "../../ui/TodoCounter";
+import { TodoSearch } from "../../ui/TodoSearch";
+import { TodoList } from "../../ui/TodoList";
+import { TodoItem } from "../../ui/TodoItem";
+import { CreateTodoButton } from "../../ui/CreateTodoButton";
+import { TodosError } from "../../ui/TodosError";
+import { TodosLoading } from "../../ui/TodosLoading";
+import { EmptyTodos } from "../../ui/EmptyTodos";
+import { Modal } from "../../ui/Modal";
+import { ChangeAlert } from "../../ui/ChangeAlert";
+import "../App.css";
 
-function App() {
+function HomePage() {
+  const navigate = useNavigate();
   const { states, stateUpdaters } = useTodos();
 
   const {
@@ -26,16 +27,16 @@ function App() {
     searchValue,
     themeColor,
     searchedTodos,
-    openModal,
+    // openModal,
   } = states;
 
   const {
     setSearchValue,
     changeTheme,
-    addTodo,
+    // addTodo,
     completeTodo,
     deleteTodo,
-    setOpenModal,
+    // setOpenModal,
     synchronizeTodos,
   } = stateUpdaters;
 
@@ -77,11 +78,16 @@ function App() {
           )}
           render={(todo) => (
             <TodoItem
-              key={todo.text}
+              key={todo.id}
               text={todo.text}
               completed={todo.completed}
-              onComplete={() => completeTodo(todo.text)}
-              onDelete={() => deleteTodo(todo.text)}
+              onComplete={() => completeTodo(todo.id)}
+              onEdit={() => {
+                navigate("/edit/" + todo.id, {
+                  state: { todo },
+                });
+              }}
+              onDelete={() => deleteTodo(todo.id)}
               themeColor={themeColor}
             />
           )}
@@ -97,13 +103,16 @@ function App() {
         )} */}
         </TodoList>
 
-        {!!openModal && (
+        {/* {!!openModal && (
           <Modal>
             <TodoForm addTodo={addTodo} setOpenModal={setOpenModal} />
           </Modal>
-        )}
+        )} */}
 
-        <CreateTodoButton setOpenModal={setOpenModal} />
+        <CreateTodoButton
+          onClick={() => navigate("/new")}
+          // setOpenModal={setOpenModal}
+        />
 
         <ChangeAlert synchronize={synchronizeTodos} />
       </section>
@@ -111,4 +120,4 @@ function App() {
   );
 }
 
-export default App;
+export { HomePage };

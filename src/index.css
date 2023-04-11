@@ -31,7 +31,7 @@ h1 {
     to right bottom,
     #62f4f9,
     var(--secondary),
-    #fe7347
+    var(--tertiary)
   );
   background-clip: text;
   -webkit-background-clip: text;
