@@ -3,6 +3,8 @@ import { ReactComponent as CheckSVG } from "./check.svg";
 import { ReactComponent as UncheckSVG } from "./uncheck.svg";
 import { ReactComponent as TrashSVG } from "./trash.svg";
 import { ReactComponent as EditSVG } from "./edit.svg";
+import { ReactComponent as HideSVG } from "./eye-off.svg";
+import { ReactComponent as ShowSVG } from "./eye.svg";
 import "./TodoIcon.css";
 
 const iconTypes = {
@@ -20,6 +22,12 @@ const iconTypes = {
   ),
   trash: (color) => (
     <TrashSVG className="Icon-svg Icon-svg__trash" stroke={color} />
+  ),
+  hide: (color) => (
+    <HideSVG className="Icon-svg Icon-svg__hide" stroke={color} />
+  ),
+  show: (color) => (
+    <ShowSVG className="Icon-svg Icon-svg__show" stroke={color} />
   ),
 };
 

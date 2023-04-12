@@ -1,11 +1,15 @@
 import React from "react";
 import "./HideShowTodos.css";
+import { HideIcon } from "../TodoIcon/HideIcon";
+import { ShowIcon } from "../TodoIcon/ShowIcon";
 
-function HideShowTodos(params) {
+function HideShowTodos({ isHidden, setIsHidden }) {
   return (
     <div className="HideShow-container">
-      <span>o</span>
-      <button className="HideTodos">Hide completed tasks</button>
+      <button className="HideTodos" onClick={() => setIsHidden(!isHidden)}>
+        {isHidden ? <ShowIcon /> : <HideIcon />}
+        {isHidden ? "Show" : "Hide"} completed tasks
+      </button>
     </div>
   );
 }

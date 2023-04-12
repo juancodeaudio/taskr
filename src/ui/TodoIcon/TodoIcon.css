@@ -65,6 +65,14 @@
   stroke: var(--error);
 }
 
+.Icon-svg__hide {
+  stroke: var(--secondary);
+}
+
+.Icon-svg__show {
+  stroke: var(--secondary);
+}
+
 .Icon-container:hover .Icon-svg__check {
   stroke: var(--secondary);
 }

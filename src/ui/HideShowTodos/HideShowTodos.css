@@ -1,13 +1,13 @@
 .HideShow-container {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   transform: scale(1);
-  transition: transform 0.3s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
 
-.HideShow-container span {
-  color: var(--secondary);
+.HideShow-container:hover {
+  opacity: 60%;
 }
 
 .HideTodos {
@@ -16,6 +16,9 @@
   border: none;
   cursor: pointer;
   font-family: var(--main-font);
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
 }
 
 .HideShow-container:hover {

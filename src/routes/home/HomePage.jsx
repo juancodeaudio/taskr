@@ -29,6 +29,7 @@ function HomePage() {
     searchValue,
     themeColor,
     searchedTodos,
+    isHidden,
     // openModal,
   } = states;
 
@@ -40,6 +41,7 @@ function HomePage() {
     deleteTodo,
     // setOpenModal,
     synchronizeTodos,
+    setIsHidden,
   } = stateUpdaters;
 
   return (
@@ -64,7 +66,7 @@ function HomePage() {
             setSearchValue={setSearchValue}
             loading={loading}
           />
-          <HideShowTodos />
+          <HideShowTodos isHidden={isHidden} setIsHidden={setIsHidden} />
         </TodoHeader>
 
         <TodoList

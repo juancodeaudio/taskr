@@ -12,17 +12,21 @@ function useTodos() {
 
   const [themeColor, setThemeColor] = React.useState(false);
   const [searchValue, setSearchValue] = React.useState("");
+  const [isHidden, setIsHidden] = React.useState(false);
   // const [openModal, setOpenModal] = React.useState(false);
 
+  const uncompletedTodos = todos.filter((todo) => !todo.completed);
   const completedTodos = todos.filter((todo) => !!todo.completed).length;
   const totalTodos = todos.length;
 
   let searchedTodos = [];
 
   if (!searchValue.length >= 1) {
-    searchedTodos = todos;
+    isHidden ? (searchedTodos = uncompletedTodos) : (searchedTodos = todos);
   } else {
-    searchedTodos = todos.filter((todo) => {
+    let filteredTodos = [];
+    isHidden ? (filteredTodos = uncompletedTodos) : (filteredTodos = todos);
+    searchedTodos = filteredTodos.filter((todo) => {
       const todoText = todo.text.toLowerCase();
       const searchText = searchValue.toLowerCase();
       return todoText.includes(searchText);
@@ -84,6 +88,7 @@ function useTodos() {
     themeColor,
     searchedTodos,
     getTodo,
+    isHidden,
     // openModal,
   };
 
@@ -96,6 +101,7 @@ function useTodos() {
     deleteTodo,
     // setOpenModal,
     synchronizeTodos,
+    setIsHidden,
   };
 
   return { states, stateUpdaters };
