@@ -5,10 +5,10 @@ function Menu({ changeTheme }) {
   return (
     <div className="header-wrapper">
       <p>Made by @juancodeaudio</p>
-      <a href="https://github.com/juancodeaudio/taskr" class="icon github">
-        <div class="tooltip">Github</div>
+      <a href="https://github.com/juancodeaudio/taskr" className="icon github">
+        <div className="tooltip">Github</div>
         <span>
-          <i class="fab fa-github"></i>
+          <i className="fab fa-github"></i>
         </span>
       </a>
       <em>☀</em>

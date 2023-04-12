@@ -43,9 +43,13 @@ function useLocalStorage(itemName, initialValue) {
 
   const saveItem = (newItem) => {
     try {
-      const stringifiedItem = JSON.stringify(newItem);
+      const sortedNewItem = newItem.sort(
+        (a, b) => a.completed - b.completed || a.id - b.id
+      );
+
+      const stringifiedItem = JSON.stringify(sortedNewItem);
       localStorage.setItem(itemName, stringifiedItem);
-      onSave(newItem);
+      onSave(sortedNewItem);
     } catch (error) {
       onError(error);
     }
