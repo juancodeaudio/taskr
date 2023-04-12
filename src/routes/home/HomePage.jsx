@@ -11,6 +11,7 @@ import { CreateTodoButton } from "../../ui/CreateTodoButton";
 import { TodosError } from "../../ui/TodosError";
 import { TodosLoading } from "../../ui/TodosLoading";
 import { EmptyTodos } from "../../ui/EmptyTodos";
+import { EmptySearch } from "../../ui/EmptySearch";
 import { Modal } from "../../ui/Modal";
 import { ChangeAlert } from "../../ui/ChangeAlert";
 import "../App.css";
@@ -74,7 +75,7 @@ function HomePage() {
           onLoading={() => <TodosLoading />}
           onEmptyTodos={() => <EmptyTodos />}
           onEmptySearchResults={(searchText) => (
-            <p>No hay resultados para {searchText}</p>
+            <EmptySearch searchText={searchText} />
           )}
           render={(todo) => (
             <TodoItem
