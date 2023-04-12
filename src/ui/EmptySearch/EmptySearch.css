@@ -15,10 +15,10 @@
   height: 300px;
 }
 
-h3 {
-  font-size: 20px;
+.emptySearch-container p {
+  color: var(--error);
 }
 
-p {
-  color: var(--font-dark);
+.emptySearch-container p span {
+  font-style: italic;
 }

@@ -6,7 +6,9 @@ function EmptySearch({ searchText }) {
     <div className="emptySearch-container">
       <div className="emptySearch-image"></div>
       <h3>Ups! Nothing found</h3>
-      <p>There are no results for {searchText}</p>
+      <p>
+        There are no results for <span>" {searchText} "</span>
+      </p>
     </div>
   );
 }

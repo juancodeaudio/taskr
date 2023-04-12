@@ -1,10 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useTodos } from "../useTodos";
-import { ThemeColor } from "../../ui/ThemeColor";
+import { Menu } from "../../ui/Menu";
 import { TodoHeader } from "../../ui/TodoHeader";
 import { TodoCounter } from "../../ui/TodoCounter";
 import { TodoSearch } from "../../ui/TodoSearch";
+import { HideShowTodos } from "../../ui/HideShowTodos";
 import { TodoList } from "../../ui/TodoList";
 import { TodoItem } from "../../ui/TodoItem";
 import { CreateTodoButton } from "../../ui/CreateTodoButton";
@@ -43,7 +44,7 @@ function HomePage() {
 
   return (
     <React.Fragment>
-      <ThemeColor changeTheme={changeTheme} />
+      <Menu changeTheme={changeTheme} />
       <section className="image-section">
         <p>Make</p>
         <p>THE BEST</p>
@@ -63,6 +64,7 @@ function HomePage() {
             setSearchValue={setSearchValue}
             loading={loading}
           />
+          <HideShowTodos />
         </TodoHeader>
 
         <TodoList
