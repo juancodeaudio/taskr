@@ -10,7 +10,6 @@ function useTodos() {
     error,
   } = useLocalStorage("TODOS_V2", []);
 
-  const [themeColor, setThemeColor] = React.useState(false);
   const [searchValue, setSearchValue] = React.useState("");
   const [isHidden, setIsHidden] = React.useState(false);
   // const [openModal, setOpenModal] = React.useState(false);
@@ -33,14 +32,22 @@ function useTodos() {
     });
   }
 
+  const [themeColor, setThemeColor] = React.useState(
+    localStorage.getItem("themeColor") || "dark"
+  );
+
   const changeTheme = () => {
-    if (themeColor) {
-      document.documentElement.setAttribute("data-theme", "dark");
+    if (themeColor === "light") {
+      setThemeColor("dark");
     } else {
-      document.documentElement.setAttribute("data-theme", "light");
+      setThemeColor("light");
     }
-    setThemeColor(!themeColor);
   };
+
+  React.useEffect(() => {
+    localStorage.setItem("themeColor", themeColor);
+    document.documentElement.setAttribute("data-theme", themeColor);
+  }, [themeColor]);
 
   const addTodo = (text) => {
     const id = newTodoId(todos);

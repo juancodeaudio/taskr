@@ -46,12 +46,18 @@ function HomePage() {
 
   return (
     <React.Fragment>
-      <Menu changeTheme={changeTheme} />
+      <Menu changeTheme={changeTheme} themeColor={themeColor} />
       <section className="image-section">
         <p>Make</p>
         <p>THE BEST</p>
         <p>out of your time!</p>
         <div className="emptyTodo-image"></div>
+        <p className="credits">
+          Illustrations from{" "}
+          <a href="https://www.vecteezy.com/members/ismunandarrambe">
+            Vecteezy
+          </a>
+        </p>
       </section>
       <section className="main-section">
         <TodoHeader>

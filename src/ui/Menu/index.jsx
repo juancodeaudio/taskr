@@ -1,7 +1,8 @@
 import React from "react";
 import "./Menu.css";
 
-function Menu({ changeTheme }) {
+function Menu({ changeTheme, themeColor }) {
+  console.log("Menu Theme", themeColor);
   return (
     <div className="header-wrapper">
       <p>Made by @juancodeaudio</p>
@@ -16,7 +17,7 @@ function Menu({ changeTheme }) {
         <input
           type="checkbox"
           id="checkbox"
-          //   theme={themeColor}
+          defaultChecked={themeColor === "light" ? true : false}
           onChange={changeTheme}
         />
         <div className="slider round"></div>

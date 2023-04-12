@@ -1,4 +1,5 @@
 .image-section {
+  position: relative;
   width: 40%;
   margin: 50px;
   background: var(--primary-light);
@@ -26,6 +27,24 @@
 .image-section p:nth-child(3) {
   font-size: 24px;
   font-style: italic;
+}
+.image-section .credits {
+  margin-top: 30px;
+  font-size: 14px;
+  color: var(--light);
+  opacity: 70%;
+}
+
+.image-section a {
+  font-size: 14px;
+  font-style: italic;
+  text-decoration: none;
+  color: var(--light);
+  transition: 0.15s ease-in-out;
+}
+.image-section a:hover {
+  opacity: 70%;
+  text-decoration: underline;
 }
 
 .image-section .emptyTodo-image {
