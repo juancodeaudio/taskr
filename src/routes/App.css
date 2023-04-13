@@ -47,7 +47,8 @@
   text-decoration: underline;
 }
 
-.image-section .emptyTodo-image {
+.image-section .emptyTodos-image {
+  background-image: url("./home/empty-todos.png");
   object-fit: cover;
   background-size: 100%;
   background-repeat: no-repeat;

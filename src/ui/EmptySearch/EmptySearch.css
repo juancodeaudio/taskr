@@ -6,7 +6,7 @@
 }
 
 .emptySearch-image {
-  background-image: url("./empty-todo-list.png");
+  background-image: url("./empty-search.png");
   object-fit: cover;
   background-size: 300px;
   background-repeat: no-repeat;

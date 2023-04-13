@@ -51,7 +51,7 @@ function HomePage() {
         <p>Make</p>
         <p>THE BEST</p>
         <p>out of your time!</p>
-        <div className="emptyTodo-image"></div>
+        <div className="emptyTodos-image"></div>
         <p className="credits">
           Illustrations from{" "}
           <a href="https://www.vecteezy.com/members/ismunandarrambe">

@@ -1,1 +1,32 @@
+.notFound-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
 
+.notFound-img {
+  margin-top: 10vh;
+  background-image: url("./not-found.png");
+  object-fit: cover;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 70vw;
+  height: 60vh;
+}
+
+.notFound-container p {
+  color: var(--light);
+}
+
+.notFound-container p:nth-child(2) {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.notFound-container p:nth-child(3) {
+  font-weight: bold;
+  margin-top: 0;
+  font-size: 40px;
+}

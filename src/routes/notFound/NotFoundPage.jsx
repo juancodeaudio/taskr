@@ -3,11 +3,11 @@ import "./NotFoundPage.css";
 
 function NotFoundPage() {
   return (
-    <>
-      <h1>404</h1>
-      <p>Looks like you're lost</p>
-      <p>Page not found</p>
-    </>
+    <div className="notFound-container">
+      <div className="notFound-img"></div>
+      <p>Ups! Looks like you're lost...</p>
+      <p>PAGE NOT FOUND</p>
+    </div>
   );
 }
 
