@@ -2,7 +2,7 @@
   background-color: var(--secondary);
   /* box-shadow: 0px 5px 10px #6fe4b136; */
   border: none;
-  border-radius: 50%;
+  border-radius: 32px;
   cursor: pointer;
   font-size: 50px;
   position: fixed;
