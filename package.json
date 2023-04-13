@@ -1,5 +1,5 @@
 {
-  "name": "todo-machine",
+  "name": "taskr",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
