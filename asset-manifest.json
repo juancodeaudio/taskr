@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/taskr/static/css/main.e476c9f8.css",
+    "main.css": "/taskr/static/css/main.11801afa.css",
     "main.js": "/taskr/static/js/main.cf021716.js",
     "static/media/empty-search.png": "/taskr/static/media/empty-search.274418375add1eb68d0e.png",
     "static/media/not-found.png": "/taskr/static/media/not-found.4b97dab14f0b71896bb9.png",
@@ -13,11 +13,11 @@
     "static/media/trash.svg": "/taskr/static/media/trash.09011edf4ff560853b1f5e171f11405a.svg",
     "static/media/uncheck.svg": "/taskr/static/media/uncheck.28a143b7837d45f648264272b2800f30.svg",
     "static/media/check.svg": "/taskr/static/media/check.be401899201037ab43bd35642a4f0860.svg",
-    "main.e476c9f8.css.map": "/taskr/static/css/main.e476c9f8.css.map",
+    "main.11801afa.css.map": "/taskr/static/css/main.11801afa.css.map",
     "main.cf021716.js.map": "/taskr/static/js/main.cf021716.js.map"
   },
   "entrypoints": [
-    "static/css/main.e476c9f8.css",
+    "static/css/main.11801afa.css",
     "static/js/main.cf021716.js"
   ]
 }
