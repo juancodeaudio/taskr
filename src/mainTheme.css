@@ -1,5 +1,6 @@
 :root {
   --primary: #171719;
+  --primary-medium: #1d1c20;
   --secondary: #6fe4b1;
   --secondary-dark: #272c34;
   --tertiary: #db7252;
@@ -15,6 +16,7 @@
 
 [data-theme="light"] {
   --primary: #e7e7f0;
+  --primary-medium: #d8d8e2;
   --secondary: #4ea37e;
   --secondary-dark: #e2f1ea;
   --tertiary: #db7252;

@@ -17,7 +17,13 @@
 }
 
 .LoadingTodo-container {
-  background-image: radial-gradient(circle, #1a1a1d, #1d1c20, #201f24, #232228);
+  background-image: radial-gradient(
+    circle,
+    var(--primary),
+    var(--primary-medium),
+    var(--primary-light),
+    var(--primary-lighter)
+  );
   background-size: 200% 200%;
   animation: loadingAnimation 3s ease-in-out infinite;
 }
