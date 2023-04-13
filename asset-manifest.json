@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/taskr/static/css/main.7bc2950c.css",
-    "main.js": "/taskr/static/js/main.6f216823.js",
-    "static/media/empty-todo-list.png": "/taskr/static/media/empty-todo-list.bccd9cf4ce7f757a56ee.png",
+    "main.css": "/taskr/static/css/main.e476c9f8.css",
+    "main.js": "/taskr/static/js/main.cf021716.js",
+    "static/media/empty-search.png": "/taskr/static/media/empty-search.274418375add1eb68d0e.png",
+    "static/media/not-found.png": "/taskr/static/media/not-found.4b97dab14f0b71896bb9.png",
+    "static/media/empty-todo-list.png": "/taskr/static/media/empty-todo-list.3f75a1cbad9c54bb6978.png",
+    "static/media/empty-todos.png": "/taskr/static/media/empty-todos.f10b645d15e9e7981fe8.png",
     "index.html": "/taskr/index.html",
+    "static/media/eye-off.svg": "/taskr/static/media/eye-off.c5e9621fcff0d244737682d52222caad.svg",
+    "static/media/eye.svg": "/taskr/static/media/eye.f3e2976e5f87e7641251ea529807359b.svg",
+    "static/media/edit.svg": "/taskr/static/media/edit.b513bc20ac61f37e812aaeb87a7a2cb9.svg",
     "static/media/trash.svg": "/taskr/static/media/trash.09011edf4ff560853b1f5e171f11405a.svg",
+    "static/media/uncheck.svg": "/taskr/static/media/uncheck.28a143b7837d45f648264272b2800f30.svg",
     "static/media/check.svg": "/taskr/static/media/check.be401899201037ab43bd35642a4f0860.svg",
-    "main.7bc2950c.css.map": "/taskr/static/css/main.7bc2950c.css.map",
-    "main.6f216823.js.map": "/taskr/static/js/main.6f216823.js.map"
+    "main.e476c9f8.css.map": "/taskr/static/css/main.e476c9f8.css.map",
+    "main.cf021716.js.map": "/taskr/static/js/main.cf021716.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bc2950c.css",
-    "static/js/main.6f216823.js"
+    "static/css/main.e476c9f8.css",
+    "static/js/main.cf021716.js"
   ]
 }
